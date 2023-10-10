@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       gridTemplateColumns: {
         app: 'minmax(18rem, 20rem) 1fr',
-        form: 'minmax(7.5rem, 15rem), minmax(25rem, 1fr), minmax(0, 15rem)',
+        profile: 'max-content 1fr max-content',
       },
     },
   },
