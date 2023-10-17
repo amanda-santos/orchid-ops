@@ -16,7 +16,8 @@
     "lucide-react": "^0.284.0",
     "next": "13.5.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-variants": "^0.1.14"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
