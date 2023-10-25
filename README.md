@@ -53,7 +53,7 @@ Technologies used to develop this project:
 
 ## 🖥 Preview
 
-
+https://github.com/amanda-santos/orchid-ops/assets/49074930/487b721a-19ae-44d1-b34f-6819faa5b905
 
 Click <a href="https://orchid-ops-amanda-santos.vercel.app/">here</a> to see it live 📺
 
