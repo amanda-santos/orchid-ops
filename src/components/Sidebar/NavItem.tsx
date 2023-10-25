@@ -1,7 +1,7 @@
 import { ChevronDown } from 'lucide-react'
 import { ComponentProps, ElementType } from 'react'
 
-export interface NavItemProps extends ComponentProps<"a"> {
+export interface NavItemProps extends ComponentProps<"button"> {
   title: string
   icon: ElementType
   showExpandIcon?: boolean
@@ -9,8 +9,8 @@ export interface NavItemProps extends ComponentProps<"a"> {
 
 export function NavItem({ title, icon: Icon, showExpandIcon = true, ...rest }: NavItemProps) {
   return (
-    <a
-      className="group flex items-center gap-3 rounded px-3 py-2 hover:bg-violet-50 hover:cursor-pointer dark:hover:bg-zinc-800"
+    <button
+      className="group flex items-center gap-3 rounded px-3 py-2 w-full hover:bg-violet-50 hover:cursor-pointer dark:hover:bg-zinc-800"
       {...rest}
     >
       <Icon className="h-5 w-5 text-zinc-500" />
@@ -20,6 +20,6 @@ export function NavItem({ title, icon: Icon, showExpandIcon = true, ...rest }: N
       {showExpandIcon && 
         <ChevronDown className="ml-auto h-5 w-5 text-zinc-400 group-hover:text-violet-300 dark:text-zinc-600" />
       }
-    </a>
+    </button>
   )
 }

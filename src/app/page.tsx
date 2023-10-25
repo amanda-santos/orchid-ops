@@ -51,7 +51,7 @@ export default function Home() {
             </label>
             <div className="flex flex-col gap-6 lg:grid lg:grid-cols-2">
               <Input.Root>
-                <Input.Control id="firstName" defaultValue="Diego" />
+                <Input.Control id="firstName" defaultValue="Amanda" />
               </Input.Root>
 
               <div className="flex flex-col gap-3 lg:block">
@@ -63,7 +63,7 @@ export default function Home() {
                 </label>
 
                 <Input.Root>
-                  <Input.Control id="lastName" defaultValue="Fernandes" />
+                  <Input.Control id="lastName" defaultValue="Santos" />
                 </Input.Root>
               </div>
             </div>
@@ -83,7 +83,7 @@ export default function Home() {
               <Input.Control
                 id="email"
                 type="email"
-                defaultValue="diego@rocketseat.com.br"
+                defaultValue="amanda.santosf.dev@gmail.com"
               />
             </Input.Root>
           </div>
@@ -113,7 +113,7 @@ export default function Home() {
               Role
             </label>
             <Input.Root>
-              <Input.Control id="role" defaultValue="CTO" />
+              <Input.Control id="role" defaultValue="Frontend Software Engineer" />
             </Input.Root>
           </div>
 
@@ -191,7 +191,15 @@ export default function Home() {
 
               <Textarea
                 id="bio"
-                defaultValue="I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development."
+                defaultValue="Hi there! 👋🏼
+
+                I have been working as a front-end engineer for about 4 years. I’m passionate about software development, problem-solving and technology. I’m always looking forward to learning more and improving my skills.
+                
+                Currently employed as a software engineer at Mercado Livre, I work closely with agile teams, developing complex features with the latest cutting-edge development tools and procedures.
+                
+                In my spare time, you can find me reading fantasy novels and drinking a cup of tea. 🌃
+                
+                Feel free to send a message if you want to know more about me. I am always eager to hear from others and expand my network here."
               />
             </div>
           </div>
