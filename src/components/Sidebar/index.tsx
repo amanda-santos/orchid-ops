@@ -25,8 +25,8 @@ import { Button } from '../Button'
 import { useTheme } from 'next-themes'
 
 export function Sidebar() {
-  const { theme, setTheme } = useTheme()
-  const isDarkMode = theme === 'dark'
+  const { setTheme, resolvedTheme } = useTheme()
+  const isDarkMode = resolvedTheme === 'dark'
 
   const handleToggleTheme = () => {
     if (isDarkMode) {
