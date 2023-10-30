@@ -1,6 +1,6 @@
 'use client'
 
-import { Logo } from '@/components/Sidebar/Logo'
+import { useEffect, useState } from 'react'
 import {
   Search,
   BarChart,
@@ -15,16 +15,19 @@ import {
   Sun,
   Moon,
 } from 'lucide-react'
+import * as Collapsible from '@radix-ui/react-collapsible'
+import { useTheme } from 'next-themes'
+
+import { Logo } from '@/components/Sidebar/Logo'
+import * as Input from '@/components/Input'
 
 import { NavItem } from './NavItem'
 import { UsedSpaceWidget } from './UsedSpaceWidget'
 import { Profile } from './Profile'
-import * as Collapsible from '@radix-ui/react-collapsible'
-import * as Input from '@/components/Input'
 import { Button } from '../Button'
-import { useTheme } from 'next-themes'
 
 export function Sidebar() {
+  const [isMounted, setIsMounted] = useState(false)
   const { setTheme, resolvedTheme } = useTheme()
   const isDarkMode = resolvedTheme === 'dark'
 
@@ -34,6 +37,14 @@ export function Sidebar() {
     } else {
       setTheme('dark')
     }
+  }
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  if (!isMounted) {
+    return null
   }
 
   return (
